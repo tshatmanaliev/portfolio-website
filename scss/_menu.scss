@@ -11,7 +11,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #ffffff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
     //Rotate into x with menu lines
@@ -68,7 +68,7 @@
         padding: 0;
         background: darken($primary-color, 5);
         list-style: none;
-        transform: translate(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
         @include easeOut;
 
         &.show {
@@ -119,9 +119,9 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #ffffff;
+        color: set-text-color($primary-color);
         text-decoration: none;
-        @include easeOut;
+        @include easeOut; 
 
         &:hover {
             color: $secondary-color;
